@@ -1,0 +1,40 @@
+{
+  "name": "bank",
+  "version": "1.0.0",
+  "description": "Bank profile",
+  "main": "src/index.tsx",
+  "scripts": {
+    "start": "webpack-dev-server --mode development",
+    "test": "todo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Poolchaos/bank.git"
+  },
+  "keywords": [
+    "bank",
+    "profile"
+  ],
+  "author": "Phillip-Juan van der Berg",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Poolchaos/bank/issues"
+  },
+  "homepage": "https://github.com/Poolchaos/bank#readme",
+  "devDependencies": {},
+  "dependencies": {
+    "@types/react": "^16.9.46",
+    "@types/react-dom": "^16.9.8",
+    "@types/styled-components": "^5.1.2",
+    "awesome-typescript-loader": "^5.2.1",
+    "css-loader": "1.0.0",
+    "react": "16.5.2",
+    "react-dom": "16.5.2",
+    "source-map-loader": "^1.0.1",
+    "style-loader": "0.23.0",
+    "typescript": "^3.9.7",
+    "webpack": "4.19.1",
+    "webpack-cli": "3.1.1",
+    "webpack-dev-server": "3.1.8"
+  }
+}
