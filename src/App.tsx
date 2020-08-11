@@ -1,12 +1,21 @@
 import React, { Component} from "react";
+import { Layout } from 'antd';
+
 import "./App.css";
+
+const { Header, Footer, Sider, Content } = Layout;
 
 class App extends Component{
   render() {
     return (
-      <div className="App">
-        <h1> Basic app setup </h1>
-      </div>
+    <Layout>
+      <Sider>Sider</Sider>
+      <Layout>
+        <Header>Header</Header>
+        <Content>Content</Content>
+        <Footer>Footer</Footer>
+      </Layout>
+    </Layout>
     );
   }
 }
