@@ -1,0 +1,45 @@
+:root {
+  /*  ---- colors ----  */
+  --red: #791a1f;
+  --blue: #164c7e;
+  --white: #ffffff;
+  --dark-gray: #141414;
+}
+
+.dark {
+  background: var(--dark-gray)!important;
+  color: var(--white)!important;
+}
+
+.primary {
+  background: var(--blue)!important;
+  color: var(--white)!important;
+}
+
+.secondary {
+  background: var(--red)!important;
+  color: var(--white)!important;
+}
+
+.content {
+  background: var(--white)!important;
+  color: var(--dark-gray)!important;
+}
+
+.dark .ant-typography {
+  color: var(--white);
+  text-align: center;
+}
+
+.ant-avatar {
+  margin: 10px auto;
+  margin-left: calc(50% - 32px);
+}
+
+.text-left {
+  text-align: left!important;
+}
+
+.wrapper {
+  padding: 10px 20px;
+}

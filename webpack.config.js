@@ -1,9 +1,12 @@
 const path = require("path");
 const webpack = require("webpack");
+const dotenv = require('dotenv').config({path: __dirname + '/.env'});
+
+const { NODE_ENV, API_BASE_PATH, LOCAL_USER_KEY } = process.env;
 
 module.exports = {
   entry: "./src/index.tsx",
-  mode: "development",
+  mode: NODE_ENV || "development",
   module: {
     rules: [
       {
@@ -34,5 +37,11 @@ module.exports = {
     publicPath: "http://localhost:3000/dist/",
     hotOnly: true
   },
-  plugins: [new webpack.HotModuleReplacementPlugin()]
+  plugins: [
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.DefinePlugin({
+      BASE_URL: JSON.stringify(NODE_ENV == 'development' ? API_BASE_PATH : 'https://path/to/live/api'),
+      LOCAL_USER_KEY: JSON.stringify(LOCAL_USER_KEY)
+    }),
+  ]
 };

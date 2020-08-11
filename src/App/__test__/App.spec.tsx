@@ -12,6 +12,3 @@ beforeEach(() => {
 it("should render without error", () => 
   expect(app.length).toBe(1));
 
-it("should have a side and a content column ", () => {
-  expect(app.children()).toHaveLength(2);
-});
