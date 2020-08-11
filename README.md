@@ -18,4 +18,5 @@ Prerequisite
 - Launch the app in a browser via url: `localhost:3000`
 
 - To run the tests: $ `yarn test`
+- To run the coverage: $ `yarn test:coverage`
 
